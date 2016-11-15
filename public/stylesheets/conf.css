@@ -26,15 +26,16 @@ h1{
 	height: 500px;
 	margin: 0 auto;
 	overflow: auto;
-	border: 1px solid #000;
-	border-left: none;
-	border-right: none;
+	background: #F5FFFA;
+	box-sizing: border-box;
+	padding: 10px;
 }
 .zhanshi li{
 	padding: 10px;
 	padding-bottom: 0;
-	border:1px solid #000;
+	border-bottom:1px solid #000;
 	overflow: hidden;
+	padding-bottom: 5px;
 }
 .zhanshi li .content{
 	margin-left: 10px;
