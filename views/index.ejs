@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="shortcut icon" href="/images/bear.png">
+  </head>
+  <body>
+    <div class="titlebox"><h1><%= title %></h1></div>
+    <div class="main">
+    	<ul>
+    		<% for(var i=0; i<data.length;i++){%>
+    			<li>
+		    		<h2> <%= data[i].title %></h2>
+		    		<p><%=data[i].des %></p>
+		    		<a href="/detail<%=data[i].id %>" class="fr more">more</a>
+	    		</li>
+    		<%} %>
+	    </ul>
+    </div>
+  </body>
+</html>

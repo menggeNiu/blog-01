@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #E8EEE3;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+}
+h1{
+	text-align: center;
+	padding: 20px 0;
+}
+.zhanshi{
+	width: 960px;
+	height: 500px;
+	margin: 0 auto;
+	overflow: auto;
+	border: 1px solid #000;
+	border-left: none;
+	border-right: none;
+}
+.zhanshi li{
+	padding: 10px;
+	padding-bottom: 0;
+	border:1px solid #000;
+	overflow: hidden;
+}
+.zhanshi li .content{
+	margin-left: 10px;
+	color: #104E8B;
+}
+.zsblogdes{
+	margin-top: 10px;
+}
+.zhanshi li a{
+	float: right;
+	color: #E9967A;
+}
+.addbox{
+	width: 960px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.addbox .titlebox{
+	font-size: 20px;
+}
+.titlebox input{
+	margin-left: 18px;
+	outline: 0;
+	font-size: 20px;
+}
+.addbox .des{
+	margin-top: 10px;
+	font-size: 20px;
+}
+.des textarea{
+	width: 700px;
+	height: 100px;
+	margin-left: 20px;
+	outline: 0;
+	font-size: 20px;
+}
+.add{
+	background: #FFD39B;
+	width: 80px;
+	height: 40px;
+	margin-top: 20px;
+	border:none;
+	font-size: 18px;
+}

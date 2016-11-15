@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>后台管理系统</title>
+    <link rel='stylesheet' href='/stylesheets/conf.css' />
+  </head>
+  <body>
+    <h1>后台管理系统</h1>
+    <div class="zhanshi">
+      <ul>
+        <% for(var i=0; i<data.length;i++){%>
+          <li>
+            <div>
+              <span>博客题目</span>
+              <span class="content"> <%= data[i].title %></span>
+            </div>
+           <div class="zsblogdes">
+             <span>博客描述</span>
+              <span class="content"><%=data[i].des %></span>
+           </div>
+            <a href="/data/del<%= data[i].id %>">删除</a>
+          </li>
+        <%} %>
+      </ul>
+    </div>
+    <div class="addbox">
+    <form action="/data/conf" method="POST">
+      <div class="titlebox">
+        <label for="">博客标题</label>
+        <input type="text" name="title">
+      </div>
+      <div class="des">
+        <label for="" class="fl">博客描述</label>
+        <textarea name="des"></textarea>
+        <input type="submit" value="添加" class="add fr">
+      </div>
+      
+    </form>
+    </div>
+  </body>
+</html>
